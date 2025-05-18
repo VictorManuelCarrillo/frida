@@ -4,40 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio Enfermería 2025A</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs6Q0gF2Lk+qwLfxilQ9l4hnqlbD0Q5M6c5Z5kp7xqqh2hN9GVs/2O+N4MI4w9vOjZ2l6zv1uj4Fw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-WtD7DCxZ8lczf4W2i/UmOSWvTzBQZpEL3vjMJkex++Pt7PC03J5GSM8yI7kHt+2wXDYo+W8FoqdDUn6tYI0K4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: linear-gradient(to bottom, #e3f2fd, #ffffff);
-      color: #333;
-    }
-
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f0f8f7; color: #333; }
     header {
-      background: url('assets/banner.jpg') center/cover no-repeat;
+      background: linear-gradient(rgba(0,77,64,0.7), rgba(0,77,64,0.7)), url('assets/banner.jpg') center/cover no-repeat;
       padding: 8em 2em 6em;
       text-align: center;
       color: white;
-      position: relative;
     }
     header h1 {
-      font-size: 3em;
-      background-color: rgba(0, 77, 64, 0.7);
+      font-size: 3.5em;
+      margin-bottom: 0.3em;
+      background-color: rgba(0,0,0,0.5);
       display: inline-block;
-      padding: 0.5em 1em;
-      border-radius: 12px;
+      padding: 0.3em 1em;
+      border-radius: 10px;
     }
     header p {
       font-size: 1.3em;
-      background-color: rgba(0, 77, 64, 0.5);
+      background-color: rgba(0,0,0,0.4);
       display: inline-block;
-      padding: 0.3em 1em;
+      padding: 0.2em 1em;
       border-radius: 8px;
-      margin-top: 1em;
     }
-
     nav {
-      background: #00796b;
+      background: #004d40;
       color: white;
       padding: 1em;
       text-align: center;
@@ -51,65 +43,31 @@
     nav a:hover {
       text-decoration: underline;
     }
-
     section {
       padding: 3em 2em;
       max-width: 1000px;
       margin: auto;
       background: white;
       margin-bottom: 2em;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    }
-
-    h2 {
-      color: #00695c;
-      margin-bottom: 1em;
-    }
-
-    .integrantes {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2em;
-      justify-content: center;
-    }
-    .card {
-      width: 220px;
-      text-align: center;
-    }
-    .card img {
-      width: 100%;
       border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-
-    .temas-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2em;
-    }
-    .tema {
-      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
-      padding: 1.5em;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    h2 { color: #00796b; margin-bottom: 1em; }
+    .integrantes { display: flex; flex-wrap: wrap; gap: 2em; justify-content: center; }
+    .card { width: 220px; text-align: center; }
+    .card img { width: 100%; border-radius: 10px; }
+    .card p { font-size: 0.95em; }
+    .tema-img { display: flex; flex-direction: column; align-items: center; margin-bottom: 2em; }
+    .tema-img img { max-width: 100%; border-radius: 10px; margin-bottom: 1em; }
+    .tema-img h3 { margin-bottom: 0.5em; }
+    ul { margin-left: 1.5em; }
+    footer {
+      background: #004d40;
+      color: white;
       text-align: center;
+      padding: 2em 1em;
     }
-    .tema img {
-      width: 100%;
-      border-radius: 10px;
-      height: 180px;
-      object-fit: cover;
-      margin-bottom: 1em;
-    }
-    .tema h3 {
-      color: #00796b;
-    }
-
-    ul {
-      margin-left: 1.5em;
-    }
-
-    .enlaces a {
+    .redes a {
       display: inline-block;
       margin: 0.5em;
       padding: 0.5em 1em;
@@ -118,29 +76,13 @@
       border-radius: 6px;
       text-decoration: none;
     }
-    .enlaces a i {
-      margin-right: 0.5em;
-    }
-    .enlaces a:hover {
+    .redes a i { margin-right: 0.5em; }
+    .redes a:hover {
       background: #004d40;
-    }
-
-    footer {
-      background: #004d40;
-      color: white;
-      text-align: center;
-      padding: 2em 1em;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2em;
-      }
     }
   </style>
 </head>
 <body>
-
 <header>
   <h1>PORTAFOLIO ENFERMERÍA 2025A</h1>
   <p>Comunicación y Tecnologías de la Información</p>
@@ -188,37 +130,33 @@
 
 <section id="temas">
   <h2>Temas del curso</h2>
-  <div class="temas-grid">
-    <div class="tema">
-      <img src="assets/gestion.jpg" alt="Gestión de la Información">
-      <h3>Tema 1 – Gestión de la Información</h3>
-      <p>Aprendimos a gestionar la información académica eficazmente, reconociendo fuentes confiables, aplicando el formato APA y reflexionando sobre la integridad académica.</p>
-    </div>
-    <div class="tema">
-      <img src="assets/colaborativo.jpg" alt="Trabajo colaborativo">
-      <h3>Tema 2 – Trabajo colaborativo</h3>
-      <p>Colaboramos usando herramientas digitales como Google Drive, analizando problemáticas reales de salud pública y promoviendo el trabajo en equipo.</p>
-    </div>
-    <div class="tema">
-      <img src="assets/tic.jpg" alt="TIC y Medios">
-      <h3>Tema 3 – TIC y Medios</h3>
-      <p>Exploramos cómo las TIC y los medios influyen en la salud pública, abordando temas como la sostenibilidad, la diversidad y la cultura de paz.</p>
-    </div>
-    <div class="tema">
-      <img src="assets/redes.jpg" alt="Redes Sociales y Salud Digital">
-      <h3>Tema 4 – Redes Sociales y Salud Digital</h3>
-      <p>Utilizamos redes como TikTok y Facebook para comunicar mensajes de salud, desarrollando habilidades en redacción, edición y comunicación digital.</p>
-    </div>
+  <div class="tema-img">
+    <img src="assets/tema1.jpg" alt="Gestión de la Información">
+    <h3>Tema 1 – Gestión de la Información</h3>
+    <p>Aprendimos a gestionar la información académica eficazmente, reconociendo fuentes confiables, aplicando el formato APA y reflexionando sobre la integridad académica.</p>
+  </div>
+  <div class="tema-img">
+    <img src="assets/tema2.jpg" alt="Trabajo colaborativo">
+    <h3>Tema 2 – Trabajo colaborativo</h3>
+    <p>Colaboramos usando herramientas digitales como Google Drive, analizando problemáticas reales de salud pública y promoviendo el trabajo en equipo.</p>
+  </div>
+  <div class="tema-img">
+    <img src="assets/tema3.jpg" alt="TIC y Medios">
+    <h3>Tema 3 – TIC y Medios</h3>
+    <p>Exploramos cómo las TIC y los medios influyen en la salud pública, abordando temas como la sostenibilidad, la diversidad y la cultura de paz.</p>
+  </div>
+  <div class="tema-img">
+    <img src="assets/tema4.jpg" alt="Redes Sociales y Salud Digital">
+    <h3>Tema 4 – Redes Sociales y Salud Digital</h3>
+    <p>Utilizamos redes como TikTok y Facebook para comunicar mensajes de salud, desarrollando habilidades en redacción, edición y comunicación digital.</p>
   </div>
 </section>
 
 <section id="conclusiones">
   <h2>Conclusiones</h2>
-  <ul>
-    <li><strong>Uso de TIC:</strong> Incorporamos herramientas digitales para organizar evidencias, investigar y trabajar en equipo de manera eficiente.</li>
-    <li><strong>Portafolio como integración:</strong> Este portafolio nos permitió recopilar, reflexionar y mostrar nuestros aprendizajes en un solo espacio estructurado.</li>
-    <li><strong>Impacto en nuestra vida:</strong> Nos sentimos más preparadas para enfrentar los retos académicos y personales con pensamiento crítico, trabajo ético y conciencia social.</li>
-  </ul>
+  <p>Durante el desarrollo del curso, fortalecimos habilidades fundamentales que nos acompañarán a lo largo de nuestra formación profesional como enfermeras. La integración de tecnologías de la información nos permitió explorar herramientas actuales que facilitan la investigación, la organización y la comunicación. </p>
+  <p>La gestión de la información académica nos ayudó a diferenciar fuentes confiables, citar correctamente y trabajar con responsabilidad ética. El trabajo colaborativo nos enseñó a compartir responsabilidades, respetar opiniones y lograr objetivos comunes en equipo. </p>
+  <p>Reflexionar sobre el papel de las TIC y los medios nos permitió ver cómo influyen en la percepción pública sobre temas de salud, y cómo podemos aprovecharlos para informar y educar. Finalmente, el uso de redes sociales con fines de promoción de la salud fue una experiencia innovadora que nos preparó para conectar con la comunidad de forma creativa, responsable y profesional.</p>
 </section>
 
 <section id="sitios">
@@ -235,11 +173,11 @@
 <section id="contacto">
   <h2>Contacto</h2>
   <p>Para contactarnos o conocer más de nuestras campañas, puedes visitar los siguientes enlaces:</p>
-  <div class="enlaces">
+  <div class="redes">
     <a href="https://vt.tiktok.com/ZSh6rJs3V/" target="_blank"><i class="fab fa-tiktok"></i>TikTok</a>
     <a href="https://www.facebook.com/share/p/1EzUxHYT5B/" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
-    <a href="https://x.com/frida612042/status/1921776773710110800?s=46" target="_blank"><i class="fab fa-x-twitter"></i>X (1)</a>
-    <a href="https://x.com/frida612042/status/1921776276479586515?s=46" target="_blank"><i class="fab fa-x-twitter"></i>X (2)</a>
+    <a href="https://x.com/frida612042/status/1921776773710110800?s=46" target="_blank"><i class="fab fa-twitter"></i>X (Twitter) 1</a>
+    <a href="https://x.com/frida612042/status/1921776276479586515?s=46" target="_blank"><i class="fab fa-twitter"></i>X (Twitter) 2</a>
   </div>
 </section>
 
