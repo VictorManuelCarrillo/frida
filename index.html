@@ -2,68 +2,52 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio Enfermería 2025A</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs6Q0gF2Lk+qwLfxilQ9l4hnqlbD0Q5M6c5Z5kp7xqqh2hN9GVs/2O+N4MI4w9vOjZ2l6zv1uj4Fw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    :root {
-      --primary: #1976d2;
-      --secondary: #64b5f6;
-      --bg-light: #e3f2fd;
-      --text-dark: #0d47a1;
-    }
-
     body {
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      font-family: 'Nunito', sans-serif;
-      background-color: var(--bg-light);
-      color: var(--text-dark);
+      background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+      color: #333;
     }
 
     header {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/banner.jpg') center/cover no-repeat;
-      padding: 6em 2em 5em;
+      background: url('assets/banner.jpg') center/cover no-repeat;
+      padding: 8em 2em 6em;
       text-align: center;
       color: white;
+      position: relative;
     }
-
     header h1 {
       font-size: 3em;
-      margin-bottom: 0.4em;
-      background-color: rgba(0,0,0,0.6);
+      background-color: rgba(0, 77, 64, 0.7);
       display: inline-block;
-      padding: 0.4em 1.2em;
+      padding: 0.5em 1em;
       border-radius: 12px;
     }
-
     header p {
-      font-size: 1.2em;
-      background-color: rgba(0,0,0,0.4);
+      font-size: 1.3em;
+      background-color: rgba(0, 77, 64, 0.5);
       display: inline-block;
       padding: 0.3em 1em;
-      border-radius: 10px;
+      border-radius: 8px;
+      margin-top: 1em;
     }
 
     nav {
-      background: var(--primary);
+      background: #00796b;
       color: white;
       padding: 1em;
       text-align: center;
     }
-
     nav a {
       color: white;
       margin: 0 1em;
       text-decoration: none;
       font-weight: bold;
     }
-
     nav a:hover {
       text-decoration: underline;
     }
@@ -74,18 +58,13 @@
       margin: auto;
       background: white;
       margin-bottom: 2em;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     }
 
     h2 {
-      color: var(--primary);
+      color: #00695c;
       margin-bottom: 1em;
-    }
-
-    h3 {
-      color: var(--text-dark);
-      margin-top: 2em;
     }
 
     .integrantes {
@@ -94,60 +73,68 @@
       gap: 2em;
       justify-content: center;
     }
-
     .card {
       width: 220px;
       text-align: center;
     }
-
     .card img {
       width: 100%;
-      border-radius: 12px;
+      border-radius: 10px;
     }
 
-    .card p {
-      font-size: 0.95em;
+    .temas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2em;
+    }
+    .tema {
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      padding: 1.5em;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .tema img {
+      width: 100%;
+      border-radius: 10px;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 1em;
+    }
+    .tema h3 {
+      color: #00796b;
     }
 
     ul {
       margin-left: 1.5em;
     }
 
+    .enlaces a {
+      display: inline-block;
+      margin: 0.5em;
+      padding: 0.5em 1em;
+      background: #00796b;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .enlaces a i {
+      margin-right: 0.5em;
+    }
+    .enlaces a:hover {
+      background: #004d40;
+    }
+
     footer {
-      background: var(--primary);
+      background: #004d40;
       color: white;
       text-align: center;
       padding: 2em 1em;
     }
 
-    .social-links a {
-      display: inline-block;
-      margin: 0.5em;
-      padding: 0.6em 1.2em;
-      border-radius: 8px;
-      background-color: var(--secondary);
-      color: white;
-      text-decoration: none;
-      font-size: 1em;
-      transition: background 0.3s;
-    }
-
-    .social-links a i {
-      margin-right: 0.5em;
-    }
-
-    .social-links a:hover {
-      background-color: #1565c0;
-    }
-
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
       header h1 {
         font-size: 2em;
-      }
-
-      .integrantes {
-        flex-direction: column;
-        align-items: center;
       }
     }
   </style>
@@ -201,25 +188,36 @@
 
 <section id="temas">
   <h2>Temas del curso</h2>
-  <h3>Tema 1 – Gestión de la Información</h3>
-  <p>Aprendimos a gestionar la información académica eficazmente, reconociendo fuentes confiables, aplicando el formato APA y reflexionando sobre la integridad académica.</p>
-
-  <h3>Tema 2 – Trabajo colaborativo</h3>
-  <p>Colaboramos usando herramientas digitales como Google Drive, analizando problemáticas reales de salud pública y promoviendo el trabajo en equipo.</p>
-
-  <h3>Tema 3 – TIC y Medios</h3>
-  <p>Exploramos cómo las TIC y los medios influyen en la salud pública, abordando temas como la sostenibilidad, la diversidad y la cultura de paz.</p>
-
-  <h3>Tema 4 – Redes Sociales y Salud Digital</h3>
-  <p>Utilizamos redes como TikTok y Facebook para comunicar mensajes de salud, desarrollando habilidades en redacción, edición y comunicación digital.</p>
+  <div class="temas-grid">
+    <div class="tema">
+      <img src="assets/gestion.jpg" alt="Gestión de la Información">
+      <h3>Tema 1 – Gestión de la Información</h3>
+      <p>Aprendimos a gestionar la información académica eficazmente, reconociendo fuentes confiables, aplicando el formato APA y reflexionando sobre la integridad académica.</p>
+    </div>
+    <div class="tema">
+      <img src="assets/colaborativo.jpg" alt="Trabajo colaborativo">
+      <h3>Tema 2 – Trabajo colaborativo</h3>
+      <p>Colaboramos usando herramientas digitales como Google Drive, analizando problemáticas reales de salud pública y promoviendo el trabajo en equipo.</p>
+    </div>
+    <div class="tema">
+      <img src="assets/tic.jpg" alt="TIC y Medios">
+      <h3>Tema 3 – TIC y Medios</h3>
+      <p>Exploramos cómo las TIC y los medios influyen en la salud pública, abordando temas como la sostenibilidad, la diversidad y la cultura de paz.</p>
+    </div>
+    <div class="tema">
+      <img src="assets/redes.jpg" alt="Redes Sociales y Salud Digital">
+      <h3>Tema 4 – Redes Sociales y Salud Digital</h3>
+      <p>Utilizamos redes como TikTok y Facebook para comunicar mensajes de salud, desarrollando habilidades en redacción, edición y comunicación digital.</p>
+    </div>
+  </div>
 </section>
 
 <section id="conclusiones">
   <h2>Conclusiones</h2>
   <ul>
-    <li><strong>Uso de TIC:</strong> Herramientas digitales para trabajar en equipo y aprender.</li>
-    <li><strong>Portafolio:</strong> Integra y refleja nuestros aprendizajes del curso.</li>
-    <li><strong>Impacto personal:</strong> Fortalecimos el pensamiento crítico, la ética y la conciencia social.</li>
+    <li><strong>Uso de TIC:</strong> Incorporamos herramientas digitales para organizar evidencias, investigar y trabajar en equipo de manera eficiente.</li>
+    <li><strong>Portafolio como integración:</strong> Este portafolio nos permitió recopilar, reflexionar y mostrar nuestros aprendizajes en un solo espacio estructurado.</li>
+    <li><strong>Impacto en nuestra vida:</strong> Nos sentimos más preparadas para enfrentar los retos académicos y personales con pensamiento crítico, trabajo ético y conciencia social.</li>
   </ul>
 </section>
 
@@ -229,15 +227,15 @@
     <li><a href="https://wdg.biblio.udg.mx" target="_blank">Biblioteca UDG Virtual</a></li>
     <li><a href="https://scholar.google.com/" target="_blank">Google Académico</a></li>
     <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">PubMed</a></li>
-    <li><a href="https://www.who.int/news-room/fact-sheets/detail/immunization-vaccines" target="_blank">OMS</a></li>
+    <li><a href="https://www.who.int/news-room/fact-sheets/detail/immunization-vaccines" target="_blank">World Health Organization</a></li>
     <li><a href="https://www.sciencedirect.com/" target="_blank">ScienceDirect</a></li>
   </ul>
 </section>
 
 <section id="contacto">
   <h2>Contacto</h2>
-  <p>Visita nuestras redes sociales:</p>
-  <div class="social-links">
+  <p>Para contactarnos o conocer más de nuestras campañas, puedes visitar los siguientes enlaces:</p>
+  <div class="enlaces">
     <a href="https://vt.tiktok.com/ZSh6rJs3V/" target="_blank"><i class="fab fa-tiktok"></i>TikTok</a>
     <a href="https://www.facebook.com/share/p/1EzUxHYT5B/" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
     <a href="https://x.com/frida612042/status/1921776773710110800?s=46" target="_blank"><i class="fab fa-x-twitter"></i>X (1)</a>
